@@ -50,6 +50,7 @@ The example endpoint is available as
     func azure functionapp publish virtualtable-funcapp
 
 Becomes available at https://virtualtable-funcapp.azurewebsites.net/api/hello?code=... (app key is needed to run).
+The api key can also be added as a custom HTTP header called "x-functions-key"
 
 ### List function app settings
 
@@ -127,7 +128,7 @@ Set up Oauth2 authorization in Postman
 
 At this point the function app is secured by Azure AD but also needs a function key (host or function level).
 We should set up Azure API management on top of this so we can avoid distributing the function key and all
-the key management/rotation problems that comes with this.
+the key management/rotation problems that come with this.
 
 Maybe later...
 
@@ -153,3 +154,5 @@ Register application in Azure AD representing Dataverse virtual table plugin.
 * client id: the client id of the Dataverse virtual table plugin registration above
 * client secret: the client secret created above
 * scope: the Application ID URI for the virtualtable-funcapp registration with "/.default" added. This can be found on the overview page or on "Expose an API".
+
+Testing shows the x-ms-client-principal-name header will have the client ID of Dataverse virtual table plugin registration above. 

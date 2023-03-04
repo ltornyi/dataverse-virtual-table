@@ -20,8 +20,12 @@ The usual stuff to install Azure CLI, Azure function core tools and VSCode exten
 
 ## Database
 
-See db folder
+See db folder.
 
-## Function app
+## Function app and Azure AD authentication
 
-See api folder
+See api folder.
+
+## Custom Dataverse connector
+
+See custom_connector folder.
