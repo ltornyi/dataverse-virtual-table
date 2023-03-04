@@ -110,3 +110,15 @@ Set up Oauth2 authorization in Postman
 * client id: the client id of the postman app registration
 
 After successfully authenticating, the access token is added to the request and the hello endpoint works again!
+
+### Modernized setup to get AAD access token for a user
+
+The application registration for the Postman client remains the same. We will use the v2.0 endpoint for authorization.
+
+Set up Oauth2 authorization in Postman
+
+* grant type: implicit
+* callback url: http://localhost
+* auth url: https://login.microsoftonline.com/<tenant id>/oauth2/v2.0/authorize
+* client id: the client id of the postman app registration
+* scope: the scope that was created under the app registration done previously for the function app
