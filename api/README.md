@@ -122,3 +122,34 @@ Set up Oauth2 authorization in Postman
 * auth url: https://login.microsoftonline.com/<tenant id>/oauth2/v2.0/authorize
 * client id: the client id of the postman app registration
 * scope: the scope that was created under the app registration done previously for the function app
+
+## Setup API management
+
+At this point the function app is secured by Azure AD but also needs a function key (host or function level).
+We should set up Azure API management on top of this so we can avoid distributing the function key and all
+the key management/rotation problems that comes with this.
+
+Maybe later...
+
+## Setup backend service registration for the virtual table plugin
+
+The Postman client and the implicit flow is great for testing but otherwise a service-to-service call will be in place.
+
+### Create app registration
+
+https://learn.microsoft.com/en-gb/azure/app-service/configure-authentication-provider-aad#daemon-client-application-service-to-service-calls
+Register application in Azure AD representing Dataverse virtual table plugin.
+
+* Name: Dataverse virtual table plugin
+* Supported account types: single tenant
+* redirect URI: blank
+* create a client secret
+* add MS Graph User.Read API permission
+
+### Setup Postman to test client credentials flow
+
+* grant type: client credentials
+* access token url: https://login.microsoftonline.com/<tenant id>/oauth2/v2.0/token
+* client id: the client id of the Dataverse virtual table plugin registration above
+* client secret: the client secret created above
+* scope: the Application ID URI for the virtualtable-funcapp registration with "/.default" added. This can be found on the overview page or on "Expose an API".
