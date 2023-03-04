@@ -44,3 +44,10 @@ Hit save, create connection on test tab and test.
 
 During development, the maker creates a connection using his/her identity. When the canvas app
 is shared with other users, they will need to use their own identity for the connection.
+
+Power FX syntax
+
+to call the API:
+  <connection>.<Action>({field1: value1, field2: value2})
+
+The value returned is a record structured according to the response definition.
