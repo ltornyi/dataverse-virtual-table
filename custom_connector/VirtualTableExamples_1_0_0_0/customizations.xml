@@ -1,0 +1,62 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>ltornyi_hellocustomconnector_c4544</Name>
+      <AppVersion>2023-03-09T19:07:57Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.23023.21.0</CreatedByClientVersion>
+      <MinClientVersion>3.23023.21.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.23023.21","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230304T170154Z-3.23023.21.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+      <DisplayName>Hello custom connector</DisplayName>
+      <Description xsi:nil="true"></Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{"90f5b703-4030-4694-813b-66d883789ac3":{"id":"/providers/microsoft.powerapps/apis/shared_virtualtable-2dfuncapp-5fa524c243e9d48594-5f8564d349728c4c69","displayName":"virtualtable-funcapp","iconUri":"https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png","dataSources":["virtualtable-funcapp"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Hello"],"customApiLogicalName":"ltornyi_virtualtable-2dfuncapp","isCustomApiSolutionAware":true}}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>1</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[{"logicalname":"ltornyi_virtualtable-2dfuncapp","componenttype":372,"componenttypeplatformname":"connector"}]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/ltornyi_hellocustomconnector_c4544_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/ltornyi_hellocustomconnector_c4544_DocumentUri.msapp</DocumentUri>
+    </CanvasApp>
+  </CanvasApps>
+  <Connectors>
+    <Connector>
+      <connectorid>12d7d0d7-b4e2-461b-8cfe-e249487c8d11</connectorid>
+      <description></description>
+      <displayname>virtualtable-funcapp</displayname>
+      <iconbrandcolor>#007ee5</iconbrandcolor>
+      <name>ltornyi_virtualtable-2dfuncapp</name>
+      <connectortype>1</connectortype>
+      <openapidefinition>/Connector/ltornyi_virtualtable-2dfuncapp_openapidefinition.json</openapidefinition>
+      <connectionparameters>/Connector/ltornyi_virtualtable-2dfuncapp_connectionparameters.json</connectionparameters>
+      <policytemplateinstances>/Connector/ltornyi_virtualtable-2dfuncapp_policytemplateinstances.json</policytemplateinstances>
+      <iconblob>/Connector/ltornyi_virtualtable-2dfuncapp_iconblob.Png</iconblob>
+    </Connector>
+  </Connectors>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
