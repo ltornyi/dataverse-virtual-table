@@ -24,7 +24,7 @@ You might have to come back and update the redirect URI when you create the cust
 * client secret
 * auth url: https://login.microsoftonline.com/<tenant>/oauth2/v2.0/authorize
 * token url: https://login.microsoftonline.com/<tenant>/oauth2/v2.0/token
-* refresh url: https://login.microsoftonline.com/<tenant>/oauth2/v2.0/authorize
+* refresh url: https://login.microsoftonline.com/<tenant>/oauth2/v2.0/token
 * scope: the scope of the function app registration
 
 ### Definition
