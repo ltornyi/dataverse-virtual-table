@@ -51,3 +51,12 @@ to call the API:
   <connection>.<Action>({field1: value1, field2: value2})
 
 The value returned is a record structured according to the response definition.
+
+## Token flow using the custom connector on the test page in the Power Automate portal
+
+1. End-user consents to the app registration representing the custom connector getting an access token for the scope of the function app registration. This access token is not visible anywhere.
+2. This access token is exchanged using OBO for an access token to allow the Microsoft Flow Portal impersonate the connection user; the audience of this token is Azure API management ("https://apihub.azure.com") and scope is user_impersonation.
+3. This access token is used to call the endpoint exposed through APIM. The endpoint corresponds to the action of the custom connector.
+4. APIM exchanges this token for another using OBO to allow the custom connector to call the function app endpoint;
+the audience of this token is the api represented by the app registration of the function app and scope is the requested scope.
+5. This final token is passed to the function.
